@@ -6,15 +6,15 @@
 >
 > Keep it short. If it grows past two screens, the detail belongs in the doc that owns it.
 
-**Last updated:** <!-- FILL: date, and by whom or which session -->
+**Last updated:** 2026-08-24, template audit and scaffold session
 
 ---
 
 ## Right now
 
 **Current phase:** Phase 0, Foundation
-**Working on:**
-**Blocked by:**
+**Working on:** nothing. Docs, skills, and repo scaffolding are in place. There is no `package.json`, no `src/`, no application code.
+**Blocked by:** owner calls listed under Open decisions. Phase 0 can start; the gate-composition call should be made before that session writes `pnpm gate`.
 
 ## Done
 
@@ -22,14 +22,15 @@ Most recent first. One line each. Prune anything older than the current phase in
 
 | Date | What | Evidence | PR |
 |---|---|---|
-| | Repo created from template | | |
+| 2026-08-24 | Scaffold: `.gitignore`, `.nvmrc` (22.23.2), `.editorconfig`, `AGENTS.md` symlink to `CLAUDE.md` | `709692c` | main |
+| 2026-08-24 | Docs and skills restored to their CLAUDE.md paths; dead numbered doc names, ADR id collision, and 404/403 mismatch fixed | `886aafd` | main |
 
 ## Next
 
 Ordered. Top item is what the next session picks up without asking.
 
-1. <!-- FILL -->
-2.
+1. Run `_build/phase-0.md`
+2. Resolve the `pnpm gate` composition mismatch (Open decisions) before wiring the command
 3.
 
 ## Blockers
@@ -46,7 +47,9 @@ Things waiting on a call from the owner. An agent must not decide these unilater
 
 | Decision | Options | Leaning | Needed by |
 |---|---|---|---|
-| | | | |
+| What `pnpm gate` contains | Short list in CLAUDE.md/phases.md vs full list in ADR 0002 (adds integration, Lighthouse, `pnpm audit`, Semgrep) vs growing the set across phases | ADR 0002 is the accepted decision; Lighthouse and Semgrep are phase 5/6 deliverables, so the list may be the end state | Phase 0 |
+| Four async states vs five-state matrix | `typescript.md` and `frontend-patterns` omit Partial; `design-system.md` owns states and includes it | Follow `design-system.md` | Phase 1 |
+| TypeScript "no enums" vs schema enums | `typescript.md` bans TS enums; db skill and phase 3 require Postgres enums for multi-state | Different layers, same word; say so explicitly or an agent will refuse DB enums | Phase 3 |
 
 ## Known debt
 
@@ -70,7 +73,7 @@ Append one line per working session. This is the trail that makes a cold start p
 
 | Date | Session did | Left it at |
 |---|---|---|
-| | | |
+| 2026-08-24 | Audited docs/skills, fixed dead numbered paths and ADR 0002 collision, added `.gitignore` `.nvmrc` `.editorconfig` `AGENTS.md` → `CLAUDE.md`. No `package.json` or `src/`. | Phase 0 not started. Next session runs `_build/phase-0.md`. |
 
 ---
 
