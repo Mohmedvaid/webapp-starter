@@ -104,6 +104,8 @@ Boots, refuses to boot when misconfigured, gate is green before a feature exists
 
 **Demo.** The smoke set, on production, in front of yourself. Environment-only failures are the norm.
 
+The phase ends with a deployed but unlaunched app; going live runs the launch checklist.
+
 ---
 
 ## Phase status

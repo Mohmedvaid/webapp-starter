@@ -1,11 +1,13 @@
 ---
 name: release-and-deploy
-description: "Ship to production and recover when a deploy goes wrong. Use when deploying, cutting a release, running migrations against production, activating live payments, turning on search indexing, or rolling back. Triggers include 'deploy', 'ship it', 'go live', 'release', 'production', 'roll back', 'the deploy broke something', 'turn on indexing', 'switch to live keys'. Covers migration ordering, the production smoke set, rollback triggers, and the irreversible steps that need a deliberate decision. Do NOT use for the phase gates themselves; those live in docs/phases.md."
+description: "Ship to production and recover when a deploy goes wrong. Use when deploying, cutting a release, running migrations against production, activating live payments, turning on search indexing, or rolling back. Triggers include 'deploy', 'ship it', 'go live', 'release', 'production', 'roll back', 'the deploy broke something', 'turn on indexing', 'switch to live keys'. Load references/launch.md at go-live. Covers migration ordering, the production smoke set, rollback triggers, and the irreversible steps that need a deliberate decision. Do NOT use for the phase gates themselves; those live in docs/phases.md."
 ---
 
 # Release and deploy
 
 Environment-only failures are the norm, not the exception. Cookie domains, redirect URLs, sending domains, key modes. Everything below assumes the code is fine and the environment is where it breaks.
+
+Load `references/launch.md` at go-live.
 
 ## Order
 
