@@ -33,7 +33,7 @@ This phase has two halves. The first deploys a working app. The second finishes 
 - `docs/product.md` FILL markers intact. If the build filled them, restore them.
 - `README.md` accurate for a fresh clone.
 
-**Enable "Template repository"** in the repo settings.
+**Confirm "Template repository"** is still set, and that creating from this template yields a clean one-commit history.
 
 **Verify the template path.** Create a throwaway repo with `gh repo create --template`, confirm its log holds exactly one commit rather than this repo's history, run `pnpm install`, and confirm `project-init` has everything it needs. If a step requires knowledge that lives only in this conversation, that knowledge belongs in a doc.
 
