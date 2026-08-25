@@ -7,6 +7,8 @@ description: "Turn the webapp-starter template into a specific project. Use on t
 
 Runs once, at the start. Ends with a repo that is about a specific product rather than a template.
 
+This skill runs in a repo created from the template, not a fork. History is fresh and there is no upstream link. Template improvements made after creation do not arrive automatically: the docs and skills in the clone are a snapshot from creation time, not a live feed.
+
 ## Interview
 
 Ask these in one message as a numbered list. Do not ask them one at a time. If Mohmed answers only some, fill what you can and list what is still missing.

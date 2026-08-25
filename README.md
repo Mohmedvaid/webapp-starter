@@ -1,8 +1,21 @@
 # webapp-starter
 
-Runnable Next.js + TypeScript template for web apps. Clone it, run `project-init`, build.
+Runnable Next.js + TypeScript template for web apps. Create a repo from this template, run `project-init`, build.
 
 Auth, payments, database, design tokens, env validation, health checks, logging, and CI are wired. A generic Projects feature ships as a working vertical slice and is deleted in one commit once you have your own.
+
+## Create a project
+
+Use GitHub's template repository feature, not a fork. A template gives the new repo a clean history and no upstream link.
+
+One-time, on this repo: enable "Template repository" in the GitHub settings. `--template` does nothing until that is on.
+
+```bash
+gh repo create <name> --template <owner>/webapp-starter --private --clone
+cd <name>
+```
+
+Then run `project-init` in that clone.
 
 ## Run it
 

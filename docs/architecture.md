@@ -188,6 +188,7 @@ Every setting the code depends on has a row in the table in `operations.md`, and
 | Multi-tenancy | A second customer type exists | Retrofitting is cheaper than guessing wrong |
 | i18n | A non-English market is real | The abstraction costs more than it returns at zero users |
 | Separate API service | Rung 3 conditions are met | See ladder above |
+| Skills distributed independently of the template | The same skill fix has been copied into a third project | A template is a snapshot and that is fine for code. Splitting `.claude/` into its own marketplace before there is a third consumer is maintenance for an audience of one |
 
 ## ADR index
 

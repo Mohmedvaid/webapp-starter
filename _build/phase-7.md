@@ -33,7 +33,9 @@ This phase has two halves. The first deploys a working app. The second finishes 
 - `docs/product.md` FILL markers intact. If the build filled them, restore them.
 - `README.md` accurate for a fresh clone.
 
-**Verify the clone path.** Clone the repo to a scratch directory, run `pnpm install`, and confirm `project-init` has everything it needs. If a step requires knowledge that lives only in this conversation, that knowledge belongs in a doc.
+**Enable "Template repository"** in the repo settings.
+
+**Verify the template path.** Create a throwaway repo with `gh repo create --template`, confirm its log holds exactly one commit rather than this repo's history, run `pnpm install`, and confirm `project-init` has everything it needs. If a step requires knowledge that lives only in this conversation, that knowledge belongs in a doc.
 
 **Delete `_build/`.** Per `CLEANUP.md`. The whole folder, including `CLEANUP.md` itself.
 
@@ -52,7 +54,8 @@ The production smoke set, run against production, output pasted. Then:
 
 ```
 pnpm gate
-git clone <repo> /tmp/clone-test && cd /tmp/clone-test && pnpm install && pnpm typecheck
+gh repo create clone-test --template <owner>/webapp-starter --private --clone
+cd clone-test && git log --oneline && pnpm install && pnpm typecheck
 ls _build 2>/dev/null || echo "build folder removed"
 git tag
 ```
