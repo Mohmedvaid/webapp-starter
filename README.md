@@ -11,7 +11,7 @@ Use GitHub's template repository feature, not a fork. A template gives the new r
 One-time, on this repo: enable "Template repository" in the GitHub settings. `--template` does nothing until that is on.
 
 ```bash
-gh repo create <name> --template <owner>/webapp-starter --private --clone
+gh repo create <name> --template Mohmedvaid/webapp-starter --private --clone
 cd <name>
 ```
 

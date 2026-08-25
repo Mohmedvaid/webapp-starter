@@ -1,6 +1,6 @@
 ---
 name: project-init
-description: "Turn the webapp-starter template into a specific project. Use on the first session in a freshly cloned repo, or when Mohmed says 'set this up', 'new project', 'initialize', 'let's start', or asks what to do first in an unconfigured repo. Runs a short interview, records the database and auth choice as ADRs, fills the FILL markers across the docs folder, deletes the payment mode that is not being used, and leaves the repo ready for the Phase 0 gate. Do NOT use on a repo that already has a filled docs/product.md; that project is already initialized and the work belongs to phase-planning instead."
+description: "Turn this template into a specific project. Use on the first session in a freshly cloned repo, or when Mohmed says 'set this up', 'new project', 'initialize', 'let's start', or asks what to do first in an unconfigured repo. Runs a short interview, records the database and auth choice as ADRs, fills the FILL markers across the docs folder, deletes the payment mode that is not being used, and leaves the repo ready for the Phase 0 gate. Do NOT use on a repo that already has a filled docs/product.md; that project is already initialized and the work belongs to phase-planning instead."
 ---
 
 # Project init

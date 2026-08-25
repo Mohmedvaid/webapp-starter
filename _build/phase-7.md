@@ -54,7 +54,7 @@ The production smoke set, run against production, output pasted. Then:
 
 ```
 pnpm gate
-gh repo create clone-test --template <owner>/webapp-starter --private --clone
+gh repo create clone-test --template Mohmedvaid/webapp-starter --private --clone
 cd clone-test && git log --oneline && pnpm install && pnpm typecheck
 ls _build 2>/dev/null || echo "build folder removed"
 git tag
