@@ -6,7 +6,7 @@
 >
 > Keep it short. If it grows past two screens, the detail belongs in the doc that owns it.
 
-**Last updated:** 2026-08-24, template audit and scaffold session
+**Last updated:** 2026-08-24, template-creation docs
 
 ---
 
@@ -22,6 +22,7 @@ Most recent first. One line each. Prune anything older than the current phase in
 
 | Date | What | Evidence | PR |
 |---|---|---|
+| 2026-08-24 | Documented GitHub `--template` as the project-creation path | `e90836e` | main |
 | 2026-08-24 | Scaffold: `.gitignore`, `.nvmrc` (22.23.2), `.editorconfig`, `AGENTS.md` symlink to `CLAUDE.md` | `709692c` | main |
 | 2026-08-24 | Docs and skills restored to their CLAUDE.md paths; dead numbered doc names, ADR id collision, and 404/403 mismatch fixed | `886aafd` | main |
 
@@ -73,6 +74,7 @@ Append one line per working session. This is the trail that makes a cold start p
 
 | Date | Session did | Left it at |
 |---|---|---|
+| 2026-08-24 | Wrote the `--template` creation path into README, project-init, architecture deferred table, and phase 7. | Phase 0 still not started. Next session runs `_build/phase-0.md`. |
 | 2026-08-24 | Audited docs/skills, fixed dead numbered paths and ADR 0002 collision, added `.gitignore` `.nvmrc` `.editorconfig` `AGENTS.md` → `CLAUDE.md`. No `package.json` or `src/`. | Phase 0 not started. Next session runs `_build/phase-0.md`. |
 
 ---
